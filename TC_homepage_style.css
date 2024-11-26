@@ -1,0 +1,217 @@
+h1 {color:#F25CA2;
+    Margin: 60px;
+    font-family: Roboto;
+    font-size: 80px;
+    align: left;
+}
+
+h2 {
+    Margin: 60px;
+    font-size: 40px;
+}
+
+h3 {
+    Margin: 40px;
+    font-size: 50px;
+    align: center;
+}
+
+h4 {
+    color:White;
+    font-size: 20px;
+    align: center;
+}
+
+p {color: black;
+    font-size: 20px}
+
+body {
+  font-family: Helvetica;
+  background-color: whitesmoke;
+}
+
+
+/* Button style */
+.btn-group {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.btn-group button {
+  background-color: black; 
+  border-radius: 20px;
+  color: #f2ca7e; 
+  font-size: 20px;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  padding: 10px 24px; 
+  margin: 0 5px;
+  display: inline-block;
+}
+
+
+/* Image banner */
+.banner-image {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Header */
+
+.header {
+    background-color: White;
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+  margin-left: auto;
+  padding-right: 50px;
+
+}
+
+/* navigation bar  */
+nav ul li {
+    display: inline;
+    margin: 20px;
+  }
+
+nav ul li a {
+    font-size: 25px;
+    color: #F25CA2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+/* Secton Styles */
+.Infosection {
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.intro-text {
+  max-width: 90%;
+  margin-right: 20px;
+}
+
+.sectionimage {
+  max-width: 400px;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  Float:right;
+}
+
+.text {
+  max-width: 90%;
+  margin-Left: 60px;
+}
+
+li {color:Black;
+    text-decoration: none;
+    font-size: 20px ;}
+
+/*cupcake card*/
+.specialty-cupcakes { 
+  border-radius: 20px;
+  text-align: center;
+}
+
+.cupcake-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cupcake-card {
+  width: 300px;
+  background-color:#F2A0CD;
+  padding: 20px;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cupcake-card:hover {
+  transform: translateY(-10px);
+}
+
+.cupcake-image {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/*buttons*/
+.order-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.Go-to-cart {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  Flaot:center;
+}
+
+.button-container {
+  text-align: center;
+}
+
+
+
+/* Footer nav bar */
+.navbar {
+  background-color: #f2a0cd;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #f2ca7e;
+  color: white;
+}
