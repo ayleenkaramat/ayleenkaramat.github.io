@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Toronto Cupcake</title>
+    <link rel="stylesheet" href="About_Hamza.css">
+</head>
+<body>
+    <!-- Sidebar Menu -->
+    <div class="sidebar" id="mySidebar">
+        <span class="close-btn" onclick="closeSidebar()">Close &times;</span>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Cupcakes</a>
+        <a href="#">Occasion</a>
+        <a href="#">Delivery</a>
+        <a href="#">View Cart</a>
+    </div>
+    <!-- Open button and page content -->
+    <div class="content">
+        <button class="open-btn" onclick="openSidebar()">
+            <div class="hamburger-icon">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </button>
+    </div>
+
+    <!-- About Us Content -->
+    <div class="about-section">
+        <img src="Toronto_Cupcake_Logo.png" alt="Toronto Cupcake Logo" class="logo">
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#cupcakes">Cupcakes</a>
+            <a href="#occasion" class="active">Occasion</a>
+            <a href="#delivery">Delivery</a>
+            <a href="#view cart">View Cart</a>
+        </div>
+        <img src="Michelle_at_kitchen.webp" alt="Hero Image" class="hero-image">
+        <div class="about-michelle">
+            <p>Toronto Cupcake was created by Michelle Harrison to pursue her love of baking. Inspired by her mother, Michelle opened Toronto Cupcake in August 2010 as one of Canada's first gourmet cupcakeries.</p>
+        </div>
+        <h1>About Us</h1>
+        <p>Welcome to Toronto Cupcake! Founded in 2010, we are proud to be Toronto's leading destination for gourmet branded cupcakes. Whether you're celebrating a birthday, hosting a corporate event, or simply indulging in a sweet treat, our handcrafted cupcakes are made fresh daily using the finest ingredients. Explore our wide range of classic and seasonal flavors, and enjoy fast, reliable delivery across the GTA.
+
+We love the idea that our treats are making people happy every time they bite into one. How much fun is that!
+
+At Toronto Cupcake, we believe in giving back to the community. Since our inception, we have partnered with numerous local organizations, donating our time and/or delicious cupcakes to support causes that make a difference in local and regional communities. We are committed to making a positive impact in our community and welcome opportunities to collaborate on charitable events.
+
+Ready to experience the best cupcakes in Toronto? Browse our selection online or get in touch to discuss custom orders. From corporate events to weddings, we have the perfect cupcakes to make your occasion unforgettable. Order today and have our gourmet cupcakes delivered right to your door!
+
+</p>
+        <div class="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-member">
+                <img src="Pic1.jpg" alt="Team Member 1" class="team-img">
+                <h3>Jane Finn</h3>
+                <p>Jane is our head baker with over 10 years of experience in creating mouth-watering cupcakes.</p>
+            </div>
+            <div class="team-member">
+                <img src="Pic2.jpg" alt="Team Member 2" class="team-img">
+                <h3>Emily Ross</h3>
+                <p>Emily is our assistant baker, ensuring every cupcake looks as good as it tastes.</p>
+            </div>
+            <div class="team-member">
+                <img src="Pic3.jpg" alt="Team Member 3" class="team-img">
+                <h3>Marco Greene</h3>
+                <p>Marco is our deputy chef, and in-charge of staff.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for sidebar functionality -->
+    <script>
+        function openSidebar() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+        function closeSidebar() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+</body>
+</html>
