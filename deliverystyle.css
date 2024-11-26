@@ -1,0 +1,269 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #0d0d0d;
+}
+
+.logo-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.headings-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.headings-container h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.headings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.headings span {
+    background-color: #0d0d0d;
+    color: #f2ca7e;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.headings span:hover {
+    background-color: #f2ca7e;
+    color: #0d0d0d;
+}
+
+.sidebar {
+    display:non;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #f2a0cd;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #f2ca7e;
+}
+
+.sidebar .close-btn {
+    font-size: 20px;
+    color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.open-btn {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #f2a0cd;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+}
+
+.open-btn .icon-bar {
+  display: block;
+  width: 22px;
+  height: 3px;
+  margin: 4px auto;
+  background-color: white;
+  transition: 0.4s;
+}
+
+.content {
+    margin: 0;
+    padding: 0;
+}
+
+.page-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: flex-start; 
+  padding: 10px 20px;
+}
+
+.header h1 {
+    color: #f20f79;
+}
+.address-section {
+    background-color: #f2ca7e;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.address-section h2 {
+    margin-bottom: 10px;
+    color: #f20f79;
+}
+
+.address-section p {
+    margin: 5px 0;
+}
+
+/* Tracking Section */
+.tracking-section h2 {
+    margin-bottom: 15px;
+    color: #f25ca2;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px 0;
+}
+
+.progress {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 4px;
+    background-color: #f25ca2;
+    width: 50%;
+    transform: translateY(-50%);
+}
+
+.step {
+    position: relative;
+    z-index: 1;
+    background-color: #f2f2f2;
+    border: 2px solid #f20f79;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #0d0d0d;
+    text-align: center;
+}
+
+.step.completed {
+    background-color: #f20f79;
+    color: #fff;
+}
+
+.step::after {
+    content: attr(data-step-label);
+    position: absolute;
+    top: 35px;
+    font-size: 12px;
+    color: #0d0d0d;
+    white-space: nowrap;
+    text-align: center;
+    width: max-content;
+}
+.form-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+    color: #f20f79;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #0d0d0d;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #f2ca7e;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #f20f79;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f25ca2;
+}
+
+#delivery-inputs {
+    display: none;
+}
+.navbar {
+    background-color: #f2a0cd;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover, .navbar a.active {
+    background-color: #f2ca7e;
+    color: #fff;
+}

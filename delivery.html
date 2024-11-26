@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="deliverystyle.css">
+</head>
+<body>
+
+    <div class="logo-container">
+        <img src="logo.png" alt="Toronto Cupcakes" class="logo">
+    </div>
+
+    <div class="headings-container">
+        <div class="headings">
+            <span>Weddings</span>
+            <span>Birthdays</span>
+            <span>Themes</span>
+            <span>Anniversaries</span>
+            <span>Graduations</span>
+            <span>Holidays</span>
+            <span>Baby</span>
+            <span>Wrap</span>
+        </div>
+    </div>
+
+       <div class="sidebar" id="mySidebar">
+        <span class="close-btn" onclick="closeSidebar()">Close &times;</span>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Cupcakes</a>
+        <a href="#">Occasion</a>
+        <a href="#">Delivery</a>
+        <a href="#">View Cart</a>
+    </div>
+
+    <div class="content">
+        <button class="open-btn" onclick="toggleSidebar()">
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+</button>
+
+        <h1 class="page-title">Delivery Page</h1>
+    </div>
+
+    <div class="form-section container">
+        <h2>Delivery Options</h2>
+        <form>
+            <label for="delivery-type">Choose Delivery Method:</label>
+            <select id="delivery-type" name="delivery-type" onchange="toggleAddressFields()">
+                <option value="pickup">Pickup</option>
+                <option value="delivery">Delivery</option>
+            </select>
+
+            <div id="delivery-inputs">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" placeholder="Enter your city">
+                <label for="zip">Zip Code:</label>
+                <input type="text" id="zip" name="zip" placeholder="Enter your zip code">
+            </div>
+
+            <h2>Payment Information</h2>
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456">
+            <label for="expiry">Expiry Date:</label>
+            <input type="month" id="expiry" name="expiry">
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" placeholder="123">
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <div style="height: 50px;"></div>
+
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#cupcakes">Cupcakes</a>
+        <a href="#occasion">Occasion</a>
+        <a href="#viewcart">View Cart</a>
+        <a href="#delivery" class="active">Delivery</a>
+    </div>
+
+    <div id="order-submitted" class="order-message">
+    <h2>Thank you for your order!</h2>
+    <p>Your order has been successfully submitted. You will receive a confirmation email shortly.</p>
+</div>
+
+    <script>
+        function toggleAddressFields() {
+            const deliveryType = document.getElementById("delivery-type").value;
+            const deliveryInputs = document.getElementById("delivery-inputs");
+            if (deliveryType === "pickup") {
+                deliveryInputs.style.display = "none";
+            } else {
+                deliveryInputs.style.display = "block";
+            }
+        }
+    
+    </script>
+<script>
+    function openSidebar() {
+        document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function closeSidebar() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+</script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form"); 
+    const orderMessage = document.getElementById("order-submitted");
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); 
+        form.style.display = "none"; 
+        orderMessage.style.display = "block"; 
+    });
+});
+</script>
+
+</body>
+</html>
